@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+    <link rel="stylesheet" href="assets/css/swap.css">
+    <link rel="stylesheet" href="assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_query.css">
+</head>
+
+<body>
+    <!-- ====================================== Preloader ===================================== -->
+    <div class="wrapper">
+        <div id="loader-wrapper">
+            <div id="loader">
+                <svg viewBox="0 0 1320 300">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">Md Al Amin Islam </text>
+                </svg>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+    <!-- ====================================== Preloader End ===================================== -->
+    <!-- ====================================== Background Animation ===================================== -->
+    <div id="particles-js"></div>
+    <!-- ====================================== Background Animation End ===================================== -->
+    <!-- ====================================== Cursor ===================================== -->
+    <div class="cursor"></div>
+    <!-- ====================================== Cursor End ===================================== -->
+    <!-- ====================================== Dark Light Mode ===================================== -->
+    <div class="dark_toggle">
+        <div class="ul-header">
+            <a class="mode" onclick="myFunction()" title="Toggle Mode">
+                <div class="icon-container">
+                    <i id="sunIcon" class="fa-solid fa-sun fa-spin icon"></i>
+                    <i id="moonIcon" class="fa-solid fa-moon icon hidden"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ====================================== Dark Light Mode End===================================== -->
+    <header>
+        <!-- ====================================== Fix Icon Menu ===================================== -->
+        <div class="sidebar close">
+            <ul class="nav-links icetab-container" id="icetab-container">
+                <li class="icetab current-tab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/home_icon.svg" alt="home_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class=""><a class="link_name" href="javascript:void(0)">Home</a></li>
+                    </ul>
+                </li>
+                <li class="icetab menu-btn">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/about_icon.svg" alt="about_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">About Me</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/resume_icon.svg" alt="resume_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Resume</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/services_icon.svg" alt="services_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Services</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/skills_icon.svg" alt="skills_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Skills</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/portfolio_icon.svg" alt="portfolio_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Portfolio</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/testimonial_icon.svg" alt="testimonial_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Testimonials</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/blog_icon.svg" alt="blog_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Blogs</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/contact_icon.svg" alt="contact_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- ====================================== Fix Icon Menu End ===================================== -->
+        <!-- ======================================= Side Menu ================================== -->
+        <div class="toggle" onclick="openNav()">
+            <img class="line-menu" src="assets/images/line-menu.png" alt="line-menu">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closebtn" onclick="closeNav()">&times;</div>
+            <img class="logo" src="assets/images/logo.png" alt="logo">
+            <ul class="sidescreen_sub icetab-container" id="icetab-container2">
+                <li class="icetab current-tab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/home_icon.svg" alt="home_icon">Home
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/about_icon.svg" alt="about_icon">About
+                        Me
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/resume_icon.svg"
+                            alt="resume_icon">Resume
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/services_icon.svg"
+                            alt="services_icon.svg">Services
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/skills_icon.svg"
+                            alt="skills_icon">Skills
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/portfolio_icon.svg"
+                            alt="portfolio_icon">Portfolio
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/testimonial_icon.svg"
+                            alt="testimonial_icon">Testimonials
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/blog_icon.svg" alt="blog_icon">Blogs
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/contact_icon.svg"
+                            alt="contact_icon">Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- ======================================= Side Menu End ================================== -->
+    </header>
+    <div class="all_page" id="page">
+        <section class="card_section" id="card_main">
+            <div class="olivia_bio" id="oliva_details">
+                <div class="imgBox">
+                    <img class="olivia-img" src="assets/images/olivia-img.jpg" alt="Md. Al Amin Islam">
+                </div>
+                <div class="bio_contain">
+                    <h1 class="olivia_moswa">Md Al Amin Islam</h1>
+                    <h2 class="designer font_w_font_s1 overflow-hidden"></h2>
+                    <button class="download_cv hire_me font_w_font_s">
+                        <i class="ri-at-line"></i> Hire Me
+                    </button>
+                </div>
+            </div>
+            <div class="right_card_main icetab-content" id="icetab-content">
+                <!-- ======================================= Home Section ================================== -->
+                <section class="oliva-intro tabcontent tab-active" id="home">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">intro</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up"> Hi, I’m Md. Al Amin Islam — Shopify App & Web Developer
+                    </h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">I'm a passionate developer currently working on
+                        <strong>Shopify App Development</strong>,
+                        <strong>Shopify Theme Customization</strong>, and <strong>Web Development</strong>.
+                        I have experience in <strong>Frontend Development</strong>, <strong>MERN Stack
+                            Development</strong>,
+                        and <strong>Full Stack Projects</strong>.
+                        My goal is to build efficient, user-friendly, and scalable web solutions that help businesses
+                        grow.
+                    </h3>
+                    <div class="button_circle_group">
+                        <div>
+                            <button class="download_cv font_w_font_s"
+                                onClick="window.open('assets/pdf/olivia_resume.pdf');">
+                                <i class="ri-download-cloud-2-line"></i>Download CV
+                            </button>
+                        </div>
+                        <div class="circular_text_main ">
+                            <a href="javascript:void(0)" class="down_arrow_main position-relative">
+                                <img class="circular_text" src="assets/images/circular_text.png" alt="circular_text">
+                                <img class="down_arrow" src="assets/images/down_arrow.svg" alt="down_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= About Section ================================== -->
+                <section class="oliva-intro tabcontent" id="about">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">about me</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">
+                        Building Scalable Shopify Apps and Modern Web Experiences
+                    </h2>
+
+                    <h3 class="passionate font_w_font_s1 fade_up">
+                        I'm <strong>Md. Al Amin Islam</strong>, a passionate <strong>Shopify App Developer</strong> and
+                        <strong>Web Developer</strong> specializing in creating customized, high-performing solutions
+                        for eCommerce brands.
+                        I focus on <strong>Shopify App Development</strong>, <strong>Theme Customization</strong>, and
+                        <strong>Full-Stack Web Development</strong> using the <strong>MERN Stack</strong>.
+                        My goal is to deliver clean, efficient, and scalable digital products that help businesses grow
+                        and provide
+                        exceptional user experiences.
+                        I'm always eager to learn, experiment, and turn complex ideas into practical, creative
+                        solutions.
+                    </h3>
+                    <div class="about_counter fade_up">
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="2">2+</h3>
+                            <h3 class="experince font_w_font_s1 ">YEARS OF EXPERIENCE</h3>
+                        </div>
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="160">40+</h3>
+                            <h3 class="experince">PROJECTS COMPLETED ON 8 COUNTRIES</h3>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Resume Section ================================== -->
+                <section class="oliva-intro tabcontent" id="resume">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">Resume</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Education</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">
+                        I have pursued formal education in computer science and technology, building a strong foundation
+                        that supports my expertise in web development and Shopify projects.
+                    </h3>
+
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">B.Sc. in Computer Science and Engineering</h3>
+                            <h4 class="university font_w_font_s1">Northern University, Bangladesh / Present</h4>
+                            <h5 class="cursus font_w_font_s1">
+                                Currently studying and building technical skills that complement my work in web and
+                                Shopify development.
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">Diploma in Computer Science and Technology</h3>
+                            <h4 class="university font_w_font_s1">Kurigram Polytechnic Institute, Kurigram / Completed
+                            </h4>
+                            <h5 class="cursus font_w_font_s1">
+                                Completed with a CGPA of 3.40, gaining foundational knowledge in computer science and
+                                technology.
+                            </h5>
+                        </div>
+                    </div>
+
+
+                    <h2 class="moswa experience_main_text font_w_font_s fade_up">Experience</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">
+                        I have been working on various web development and Shopify projects, building expertise in
+                        frontend, backend, and full-stack solutions.
+                    </h3>
+
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Web Developer</h3>
+                                    <h4 class="company font_w_font_s1">SM Technology (Part of BDCalling / Betopia Group)
+                                        / 2024 - Present</h4>
+                                </div>
+                                <img class="company_logo" src="assets/images/sm.png" alt="SM Technology">
+                            </div>
+                            <h5 class="cursus font_w_font_s1">
+                                Currently working as a web developer, focusing on Shopify app development, theme
+                                customization, and modern web solutions.
+                            </h5>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Services Section ================================== -->
+                <section class="oliva-intro tabcontent" id="services">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">my services</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Bringing your vision to life with Precision and Passion</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">
+                        I specialize in building custom Shopify apps, theme customization, and full-stack web
+                        development.
+                        My goal is to transform your ideas into high-performing digital products that enhance your
+                        business presence online.
+                    </h3>
+                    <div class="services_box_main">
+
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="assets/images/shopify app development.png"
+                                alt="shopify app development">
+                            <h3 class="ui_ux font_w_font_s">Shopify App Development</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">
+                                I develop scalable and secure custom Shopify apps tailored to your business needs —
+                                from product management to automation tools — using modern frameworks like Remix,
+                                Node.js, and Prisma.
+                            </h4>
+                        </div>
+
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="assets/images/shopify theme.png" alt="shopify theme">
+                            <h3 class="ui_ux font_w_font_s">Shopify Theme Customization</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">
+                                I design and customize Shopify themes to reflect your brand identity and optimize
+                                customer experience,
+                                ensuring your store looks professional and converts visitors into buyers.
+                            </h4>
+                        </div>
+
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="assets/images/web.png" alt="web">
+                            <h3 class="ui_ux font_w_font_s">Web Development</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">
+                                From front-end interfaces to full-stack solutions, I build fast, responsive, and
+                                user-friendly websites
+                                using modern technologies like React, Next.js, and MongoDB.
+                            </h4>
+                        </div>
+
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="assets/images/shopify store.png" alt="shopify store design">
+                            <h3 class="ui_ux font_w_font_s">Shopify Store Design</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">
+                                I create visually appealing and conversion-focused Shopify stores from scratch or
+                                redesign existing ones,
+                                integrating apps, products, and responsive layouts for seamless shopping experiences.
+                            </h4>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ======================================= Skills Section ================================== -->
+                <section class="oliva-intro tabcontent" id="skill">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">my skills</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Shopify Development & Full-Stack Craftsmanship</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">
+                        I design, customize and build Shopify stores & custom apps that enhance brand identity, improve
+                        conversions,
+                        and create smooth user experiences. My approach blends technical precision with a strong
+                        understanding of e-commerce.
+                    </h3>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Shopify Development</h3>
+                    <ul style="column-gap: 5px;">
+                        <li class="skills_intro font_w_font_s fade_up mb-1">App development</li>
+                        <li class="skills_intro font_w_font_s fade_up">Theme customization</li>
+                        <li class="skills_intro font_w_font_s fade_up">HTML</li>
+                        <li class="skills_intro font_w_font_s fade_up">CSS</li>
+                        <li class="skills_intro font_w_font_s fade_up">Liquid</li>
+                        <li class="skills_intro font_w_font_s fade_up">Schema</li>
+                        <li class="skills_intro font_w_font_s fade_up">Remix</li>
+                        <li class="skills_intro font_w_font_s fade_up">Shopify Polaris</li>
+                        <li class="skills_intro font_w_font_s fade_up">PostgreSQL</li>
+                        <li class="skills_intro font_w_font_s fade_up">Prisma</li>
+                    </ul>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Client Side</h3>
+                    <ul style="column-gap: 5px;">
+                        <li class="skills_intro font_w_font_s fade_up mb-1">javaScript</li>
+                        <li class="skills_intro font_w_font_s fade_up">TypeScript</li>
+                        <li class="skills_intro font_w_font_s fade_up">NextJs</li>
+                        <li class="skills_intro font_w_font_s fade_up">Redux</li>
+                        <li class="skills_intro font_w_font_s fade_up">ReactJs</li>
+                        <li class="skills_intro font_w_font_s fade_up">React Router</li>
+                        <li class="skills_intro font_w_font_s fade_up">FireBase</li>
+                        <li class="skills_intro font_w_font_s fade_up">Stripe</li>
+                    </ul>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Server Side</h3>
+                    <ul style="column-gap: 5px;">
+                        <li class="skills_intro font_w_font_s fade_up mb-1">MongoDB</li>
+                        <li class="skills_intro font_w_font_s fade_up">Node.js</li>
+                        <li class="skills_intro font_w_font_s fade_up">Expressjs</li>
+                        <li class="skills_intro font_w_font_s fade_up">JWT</li>
+                    </ul>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">CSS Library</h3>
+                    <ul style="column-gap: 5px;">
+                        <li class="skills_intro font_w_font_s fade_up mb-1">Tailwind Css</li>
+                        <li class="skills_intro font_w_font_s fade_up">Bootstrap</li>
+                        <li class="skills_intro font_w_font_s fade_up">Mategial ui</li>
+                    </ul>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Tools</h3>
+                    <ul style="column-gap: 5px;">
+                        <li class="skills_intro font_w_font_s fade_up mb-1">VS Code</li>
+                        <li class="skills_intro font_w_font_s fade_up">GitBash</li>
+                        <li class="skills_intro font_w_font_s fade_up">NPM</li>
+                        <li class="skills_intro font_w_font_s fade_up mb-1">Yarn</li>
+                        <li class="skills_intro font_w_font_s fade_up">Chrome Dev Tools</li>
+                        <li class="skills_intro font_w_font_s fade_up">Github</li>
+                    </ul>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Hosting</h3>
+                    <ul style="column-gap: 5px;">
+                        <li class="skills_intro font_w_font_s fade_up mb-1">Github</li>
+                        <li class="skills_intro font_w_font_s fade_up">Firebase</li>
+                        <li class="skills_intro font_w_font_s fade_up">Netlify</li>
+                        <li class="skills_intro font_w_font_s fade_up mb-1">Vercel</li>
+                        <li class="skills_intro font_w_font_s fade_up">Render</li>
+                    </ul>
+
+
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Language Skills</h3>
+                    <ul style="column-gap: 5px;">
+                        <li class="skills_intro font_w_font_s fade_up mb-1">English</li>
+                        <li class="skills_intro font_w_font_s fade_up">Bangla</li>
+                    </ul>
+
+                </section>
+                <!-- ======================================= Portfolio Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="portfolio">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">portfolio</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Elevate your brand to new heights with our expertise</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Odio pulvinar purus pharetra nunc tellus ultrices in
+                        ac enim. Volutpat purus tristique turpis purus faucibus leo arcu imperdiet nulla.
+                    </h3>
+                    <div class="content_main">
+                        <div class="content_main1">
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/content_img.jpg" alt="content_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Corporate Branding</h3>
+                                        <p class="content-text">CONTENT</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Corporate Branding</h4>
+                                <p class="project_name_sub font_w_font_s1">CONTENT</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio" id="youtube">
+                                    <a href="https://youtu.be/OZzoAw9QHXY?si=j32q8VFU2u2_WkfW">
+                                        <div class="content-overlay"></div>
+                                        <img class="content-image" src="assets/images/food_app.jpg" alt="food_app">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Food App Development</h3>
+                                            <p class="content-text">youtube video</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Food App Development</h4>
+                                <p class="project_name_sub font_w_font_s1">youtube video</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio link">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/pocket_fm.jpg" alt="pocket_fm">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Pocket FM Radio</h3>
+                                        <p class="content-text">sound cloud</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Pocket FM Radio</h4>
+                                <p class="project_name_sub font_w_font_s1">sound cloud</p>
+                            </div>
+                        </div>
+                        <div class="content_main2">
+                            <div class="fade_up">
+                                <div class="content_portfolio" id="vimeo">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/crypto_app_img.jpg"
+                                        alt="crypto_app_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Crypto App UI Design</h3>
+                                        <p class="content-text">vimeo video</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Crypto App UI Design</h4>
+                                <p class="project_name_sub font_w_font_s1">vimeo video</p>
+                            </div>
+                            <div class="">
+                                <a href="#popup1">
+                                    <div class="content_portfolio">
+                                        <div class="content-overlay"></div>
+                                        <img class="content-image" src="assets/images/city_3Dview.jpg"
+                                            alt="city_3Dview">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">City 3D View</h3>
+                                            <p class="content-text">gallery</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h4 class="project_name font_w_font_s">City 3D View</h4>
+                                <p class="project_name_sub font_w_font_s1">gallery</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio pop-up">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/bank_app.jpg" alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Bank App Development</h3>
+                                        <p class="content-text">content</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Bank App Development</h4>
+                                <p class="project_name_sub font_w_font_s1">content</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Portfolio Section End  ================================== -->
+                <!-- ======================================= Testimonials Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="testimonials">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">testimonials</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Trusted By Global Shopify Clients</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Delivering exceptional Shopify store designs, theme customization, 
+                        and app development solutions that help businesses thrive in the e-commerce world.
+                    </h3>
+                    <div class="testimonials_card">
+                        <div>
+                            <div class="slider_contain_main">
+                                <div class="img_text">
+                                    <img class="client_img" src="assets/images/testimonial_img.png"
+                                        alt="testimonial_img">
+                                    <div>
+                                        <h4 class="client_name font_w_font_s">Sarah Mitchell</h4>
+                                        <p class="client_roll font_w_font_s1">Founder, Fashion Boutique</p>
+                                    </div>
+                                </div>
+                                <img class="collan" src="assets/images/collan.png" alt="collan">
+                            </div>
+                            <div class="rating_main">
+                                <img src="assets/images/rating.png" alt="rating">
+                            </div>
+                            <h3 class="placerat font_w_font_s1">Working with this developer was a game-changer for our Shopify store! 
+                                The custom theme design perfectly captured our brand identity, and the attention to detail was outstanding. 
+                                Our conversion rate increased by 35% within the first month. Highly recommended for anyone looking for professional 
+                                Shopify development!
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="slider_contain_main">
+                                <div class="img_text">
+                                    <img class="client_img" src="assets/images/testimonial_img2.png"
+                                        alt="testimonial_img2">
+                                    <div>
+                                        <h4 class="client_name font_w_font_s">James Rodriguez</h4>
+                                        <p class="client_roll font_w_font_s1">CEO, Tech Accessories</p>
+                                    </div>
+                                </div>
+                                <img class="collan" src="assets/images/collan.png" alt="collan">
+                            </div>
+                            <div class="rating_main">
+                                <img src="assets/images/rating.png" alt="rating">
+                            </div>
+                            <h3 class="placerat font_w_font_s1">I needed a complete Shopify theme customization for my electronics store, 
+                                and this developer exceeded all expectations. The mobile responsiveness is flawless, and the custom features 
+                                integrated seamlessly. What impressed me most was the optimization work - our site now loads incredibly fast. 
+                                The expertise in Shopify Liquid coding really shows in the final product. Worth every penny!
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="slider_contain_main">
+                                <div class="img_text">
+                                    <img class="client_img" src="assets/images/testimonial_img3.png"
+                                        alt="testimonial_img3">
+                                    <div>
+                                        <h4 class="client_name font_w_font_s">Emily Chen</h4>
+                                        <p class="client_roll font_w_font_s1">Owner, Beauty Products</p>
+                                    </div>
+                                </div>
+                                <img class="collan" src="assets/images/collan.png" alt="collan">
+                            </div>
+                            <div class="rating_main">
+                                <img src="assets/images/rating.png" alt="rating">
+                            </div>
+                            <h3 class="placerat font_w_font_s1">The custom Shopify app development service was phenomenal! 
+                                I needed a specific inventory management solution that wasn't available in the app store, and this developer 
+                                built exactly what I needed. The app integrates perfectly with my store and has saved me countless hours. 
+                                The documentation provided was clear, and the post-launch support has been excellent. A true professional!
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="slider_contain_main">
+                                <div class="img_text">
+                                    <img class="client_img" src="assets/images/testimonial_img4.png"
+                                        alt="testimonial_img4">
+                                    <div>
+                                        <h4 class="client_name font_w_font_s">Michael Thompson</h4>
+                                        <p class="client_roll font_w_font_s1">Manager, Sports Equipment</p>
+                                    </div>
+                                </div>
+                                <img class="collan" src="assets/images/collan.png" alt="collan">
+                            </div>
+                            <div class="rating_main">
+                                <img src="assets/images/rating.png" alt="rating">
+                            </div>
+                            <h3 class="placerat font_w_font_s1">Outstanding Shopify store design from start to finish! 
+                                The developer took time to understand our business goals and created a store that not only looks amazing 
+                                but also functions perfectly. The custom sections and unique layout have made our store stand out from 
+                                competitors. Customer feedback has been overwhelmingly positive, and our sales have grown significantly. 
+                                I couldn't be happier with the results!
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="slider_contain_main">
+                                <div class="img_text">
+                                    <img class="client_img" src="assets/images/testimonial_img5.png"
+                                        alt="testimonial_img4">
+                                    <div>
+                                        <h4 class="client_name font_w_font_s">Lisa Anderson</h4>
+                                        <p class="client_roll font_w_font_s1">Founder, Home Decor Store</p>
+                                    </div>
+                                </div>
+                                <img class="collan" src="assets/images/collan.png" alt="collan">
+                            </div>
+                            <div class="rating_main">
+                                <img src="assets/images/rating.png" alt="rating">
+                            </div>
+                            <h3 class="placerat font_w_font_s1">I've worked with several Shopify developers before, but this experience 
+                                was by far the best. The theme customization work was pixel-perfect, and all the features I requested were 
+                                implemented beautifully. The developer was responsive, patient with my questions, and offered valuable 
+                                suggestions that improved the final outcome. My store now has a professional, polished look that builds 
+                                customer trust. Highly recommend for any Shopify project!
+                            </h3>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Testimonials Section End ================================== -->
+                <!-- ======================================= Blog Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="blog">
+                    
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">Blogs</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Latest Shopify Insights & Tutorials</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Stay updated with the latest trends in Shopify development, theme customization tips, and e-commerce strategies to grow your online business.
+                    </h3>
+                    <div class="blog_section_main ">
+                        <div class="blog_img_top fade_up">
+                            <div class="blog_img trigger">
+                                <div class="blog_date">
+                                    <h4 class="date font_w_font_s">10 <span class="month">NOV</span></h4>
+                                </div>
+                            </div>
+                            <h3 class="become font_w_font_s">Shopify App Development: From Remix to React Router — The Big Transition</h3>
+                            <p class="web_development font_w_font_s1">Shopify App Development</p>
+                        </div>
+                        <div class="fade_up">
+                            <div class="blog_img blog_img2 trigger">
+                                <div class="blog_date">
+                                    <h4 class="date font_w_font_s">25 <span class="month">DEC</span></h4>
+                                </div>
+                            </div>
+                            <h3 class="become font_w_font_s">Mastering Shopify Theme Customization: Liquid, Sections & Best Practices</h3>
+                            <p class="web_development font_w_font_s1">Shopify Theme Development</p>
+                        </div>
+                        <div class="fade_up">
+                            <div class="blog_img blog_img3 trigger">
+                                <div class="blog_date">
+                                    <h4 class="date font_w_font_s">15 <span class="month">DEC</span></h4>
+                                </div>
+                            </div>
+                            <h3 class="become font_w_font_s">Building Shopify Apps with Polaris: Creating Professional Admin Interfaces</h3>
+                            <p class="web_development font_w_font_s1">Shopify App Development</p>
+                        </div>
+                        <div class="fade_up">
+                            <div class="blog_img blog_img4 trigger">
+                                <div class="blog_date">
+                                    <h4 class="date font_w_font_s">8 <span class="month">DEC</span></h4>
+                                </div>
+                            </div>
+                            <h3 class="become font_w_font_s">Shopify App Bridge: Connecting Your App to the Shopify Admin Experience</h3>
+                            <p class="web_development font_w_font_s1">Shopify App Development</p>
+                        </div>
+                    </div>
+                    <!-- <div id="text">
+                        <div class="view_more">
+                            <div class="fade_up">
+                                <div class="blog_img blog_img7 trigger">
+                                    <div class="blog_date">
+                                        <h4 class="date font_w_font_s">22 <span class="month">NOV</span></h4>
+                                    </div>
+                                </div>
+                                <h3 class="become font_w_font_s">5 Steps to Create an Outstanding Marketing Plan</h3>
+                                <p class="web_development font_w_font_s1">digital marketing</p>
+                            </div>
+                            <div class="fade_up">
+                                <div class="blog_img blog_img8 trigger">
+                                    <div class="blog_date">
+                                        <h4 class="date font_w_font_s">22 <span class="month">NOV</span></h4>
+                                    </div>
+                                </div>
+                                <h3 class="become font_w_font_s">5 Steps to Create an Outstanding Marketing Plan</h3>
+                                <p class="web_development font_w_font_s1">digital marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view_more_main fade_up">
+                        <button class="download_cv font_w_font_s" id="toggle">View More</button>
+                    </div> -->
+                </section>
+                <!-- ======================================= Blog Section End  ================================== -->
+                <!-- ======================================= Contact us Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="contact">
+                    <div class="intro_main">
+                        <h2 class="intro fade_up">contact us</h2>
+                    </div>
+                    <h2 class="moswa fade_up">Let's Work Together!</h2>
+                    <div class="container1">
+                        <div class="form form__1">
+                            <label for="name" class="form__label">What’s Your Name*</label>
+                            <input type="text" class="form__input" placeholder="" id="name" required autocomplete="off">
+                        </div>
+                        <div class="form form__2">
+                            <label for="email" class="form__label">Your Email*</label>
+                            <input type="email" class="form__input" placeholder="" id="email" required
+                                autocomplete="off">
+                        </div>
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Your Phone Number*</label>
+                            <input type="text" class="form__input" placeholder="" id="phone" required
+                                autocomplete="off">
+                        </div>
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Subject*</label>
+                            <input type="text" class="form__input" placeholder="" id="subject" required
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="btn_message">
+                        <div class="form form__3">
+                            <label for="name" class="form__label">Tell us about your project*</label>
+                            <input type="text" class="form__input message2" placeholder="" id="project" required>
+                        </div>
+                        <div class="send_message_form">
+                            <button class="download_cv form__btn">
+                                <i class="fa-regular fa-paper-plane material-icons"></i>Send Message
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="moswa touch">Get in touch!</h3>
+                        <div class="contact_number_main">
+                            <img src="assets/images/contact.svg" alt="contact">
+                            <h4 class="contact_number"><a href="tel:01516569309">+880 1516-569309</a></h4>
+                            <h4 class="contact_number"><a href="tel:01707691162">+880 1707-691162</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="assets/images/gmail.svg" alt="gmail">
+                            <h4 class="contact_number"><a
+                                    href="mailto:mdalamin212104@gmail.com">mdalamin212104@gmail.com</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="assets/images/map.svg" alt="map">
+                            <h4 class="contact_number">
+                                <a href="javascript:void;">Banasree, Rampura, Dhaka, Bangladesh</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2171.205270898308!2d90.42853281052352!3d23.76457834921741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7f510ac0809%3A0xd764a84ab33b89cf!2sBanasree%20Main%20Rd%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1762792469252!5m2!1sen!2sbd"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h5 class="copyright">© 2025. All rights reserved by Al Amin. </h5>
+                </section>
+                <!-- ======================================= Contact us Section End ================================== -->
+            </div>
+        </section>
+        <!-- ======================================= Social Media Right Side  ================================== -->
+        <div class="social_media_main" id="social_media_main">
+            <ul class="social_media">
+                <li><a href="https://www.facebook.com/md.al.amin.716294/" target="blank">FB</a></li>
+                <li><a href="https://www.linkedin.com/in/al-amin21/" target="blank">IG</a></li>
+                <li><a href="https://github.com/MdAlAmin212104" target="blank">GH</a></li>
+            </ul>
+        </div>
+        <!-- ======================================= Social Media Right Side End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window  ================================== -->
+        <div class="overlay">
+            <div class="content2">
+                <div id="close">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="assets/images/portfolio_big_img.jpg" alt="portfolio_big_img">
+                <div class="corporate_main">
+                    <div class="corporate_sub">
+                        <h3 class="project_name corp font_w_font_s">Corporate Branding</h3>
+                        <p class="project_name_sub font_w_font_s1">CONTENT</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Created By:</p>
+                        <p class="cuberto">Cuberto</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Date:</p>
+                        <p class="cuberto">20/12/2024</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Client:</p>
+                        <p class="cuberto">Rayan Patrick</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Categories:</p>
+                        <p class="cuberto">Content</p>
+                    </div>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    Ornare sagittis blandit imperdiet cursus risus. Amet proin cras mattis arcu pellentesque lorem
+                    sagittis. Mauris facilisis id est duis eget sed cras curabitur faucibus. Lectus eu eu quis amet.
+                    Ultrices morbi bibendum risus nisi sapien id ut egestas. Et fermentum fermentum faucibus sed quis in
+                    eget. Quis cursus eu in sit cras sit elementum nibh sit.
+                </p>
+                <div class="project_second">
+                    <div>
+                        <img class="project_sub_images" src="assets/images/project_sub_images1.jpg"
+                            alt="project_sub_images1">
+                    </div>
+                    <div>
+                        <img class="project_sub_images" src="assets/images/project_sub_images2.jpg"
+                            alt="project_sub_images2">
+                    </div>
+                </div>
+                <p class="blandit_text">Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed
+                    viverra volutpat. Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus
+                    enim nisi proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id
+                    nec amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+                </p>
+                <div class="pop-up-footer">
+                    <button class="download_cv view_project font_w_font_s"
+                        onClick="window.open('https://themeforest.net/item/personal-portfolio-cv-html-template-nairobi/48662175');">
+                        <i class="ri-eye-line"></i> View Project
+                    </button>
+                    <div class="share-button share">
+                        <i class="ri-share-line share-btn"></i>
+                        <div class="social top center networks-5 ">
+                            <a class="fbtn facebook" href="https://www.facebook.com" target="_blank">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a class="fbtn instagram" href="https://www.instagram.com" target="_blank">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a class="fbtn whatsapp" href="https://wa.me/+12345678899" target="_blank">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+                            <a class="fbtn linkedin" href="https://www.linkedin.com" target="_blank">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Blog PopUp Window  ================================== -->
+        <div class="modal-wrapper">
+            <div class="modal">
+                <div class="content3">
+                    <h3 class="logo_design"></h3>
+                    <h4 class="graphic font_w_font_s1"></h4>
+                    <div class="blog_pop_up_main">
+                        <img class="blog_pop_up " src="assets/images/remix-to-router.jpeg" alt="blog_pop_up">
+                    </div>
+                    <h4 class="nunc font_w_font_s1"></h4>
+
+                    <div class="next_prev_share  position-relative">
+                        <div class="next_prev_arrow">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <h5 class="blog_next_prev font_w_font_s1">Prev</h5>
+                        </div>
+                        <div class="share-button share share2">
+                            <i class="ri-share-line share-btn share-btn2"></i>
+                            <div class="social top center networks-5 ">
+                                <a class="fbtn facebook" href="https://www.facebook.com" target="_blank">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a class="fbtn instagram" href="https://www.instagram.com" target="_blank">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a class="fbtn whatsapp" href="https://wa.me/+12345678899" target="_blank">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                                <a class="fbtn linkedin" href="https://www.linkedin.com" target="_blank">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="next_prev_arrow">
+                            <h5 class="blog_next_prev font_w_font_s1">Next</h5>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="page-wrapper trigger">
+                        <div class="circle-wrapper">
+                            <div class="warning circle_close"></div>
+                            <div class="close-btn font_w_font_s1">CLOSE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================= Portfolio gallery ================================== -->
+    <div id="popup1" class="overlay_gallery">
+        <div class="popup_gallery">
+            <h2 class="city_gallery">City 3D View Gallery</h2>
+            <a class="close" href="#">&times;</a>
+            <div id="cbwrap">
+                <div class="gallery">
+                    <img src="assets/images/gallery_img1.png" alt="gallery_img1">
+                    <img src="assets/images/gallery_img2.png" alt="gallery_img2">
+                    <img src="assets/images/gallery_img3.png" alt="gallery_img3">
+                    <img src="assets/images/gallery_img4.png" alt="gallery_img4">
+                    <img src="assets/images/gallery_img5.png" alt="gallery_img5">
+                    <img src="assets/images/gallery_img1.png" alt="gallery_img1">
+                    <img src="assets/images/gallery_img4.png" alt="gallery_img4">
+                    <img src="assets/images/gallery_img2.png" alt="gallery_img2">
+                    <img src="assets/images/gallery_img5.png" alt="gallery_img5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/jquery.min.js"></script>
+    <script src="assets/javascript/magnific-popup.min.js"></script>
+    <script src="assets/javascript/progresscircle.js"></script>
+    <script src="assets/javascript/cursor.js"></script>
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="assets/javascript/slick.min.js"></script>
+    <script src="assets/javascript/hexagon_animation/particles.min.js"></script>
+    <script src="assets/javascript/spider_animation/spider_animation.js"></script>
+    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/blog-display.js"></script>
+</body>
+
+</html>
