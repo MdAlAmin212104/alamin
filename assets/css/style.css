@@ -1997,15 +1997,15 @@ iframe {
 }
 
 /*-----------------------[ 18.Social Media Icons Right Side CSS ]------------------------*/
-.social_media li::before {
+/* .social_media li::before {
     content: "\2022";
     color: #55E6A5;
     font-weight: bolder;
     font-size: 28px;
     display: inline-block;
     width: 20px;
-    margin: 0;
-}
+    margin: 10px;
+} */
 
 ul {
     padding-left: 0;
@@ -2013,6 +2013,7 @@ ul {
 
 .social_media li {
     list-style: none;
+    margin: 10px;
 }
 
 .social_media li a {
@@ -2025,10 +2026,13 @@ ul {
     line-height: 30px;
 }
 
-.social_media {
+/* .social_media {
     display: flex;
     transform: rotate(90deg);
     gap: 15px;
+} */
+.social_media {
+    margin-right: 40px;
 }
 
 .social_media_main {
@@ -2695,4 +2699,13 @@ ul {
     }
 }
 
+
+/* For SVG images */
+body:not(.dark-mode) .social-icon {
+    filter: brightness(0) invert(0); /* Black in light mode */
+}
+
+body.dark-mode .social-icon {
+    filter: brightness(0) invert(1); /* White in dark mode */
+}
 
